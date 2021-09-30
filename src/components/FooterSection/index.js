@@ -27,12 +27,12 @@ function FooterSection({ isInvitation }) {
             <div className="col-md-12 text-center">
               <p>
                 <small className="block">&copy; 2021 Nanda & Fandi Wedding. All Rights Reserved.</small>
-                <small className="block">
+                {/* <small className="block">
                   Song by{' '}
                   <a href="https://www.youtube.com/watch?v=fb167KAxvrg" target="_blank" rel="noreferrer">
                     Anandito Anisa - Pernikahan Impian
                   </a>
-                </small>
+                </small> */}
               </p>
             </div>
           </div>

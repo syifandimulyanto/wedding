@@ -10,7 +10,7 @@ import SectionBox from './SectionBox';
 
 function CovidSection() {
   return (
-    <div id="fh5co-couple">
+    <div id="fh5co-couple" className="fh5co-section-cream">
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">

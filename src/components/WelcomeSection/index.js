@@ -47,7 +47,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
   const renderGuestSection = () => {
     return (
       <Fragment>
-        <h2 className="to-dearest-name">Dear Friends,</h2>
+        <h2 className="to-dearest-name">Kpd Bapak/Ibu/Saudara/i</h2>
         <p>Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Menghadiri Acara Pernikahan Kami.</p>
       </Fragment>
     );
@@ -70,7 +70,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
               <h4 className="sub-title">The Wedding of</h4>
               <h1 className="title">Nanda &amp; Fandi</h1>
               <div className={isAnonymGuest ? 'margin__bottom' : ''}>
-                <CountContainer />
+                {/* <CountContainer /> */}
               </div>
               {renderGuestSection()}
               {isInvitation && (

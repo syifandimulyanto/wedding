@@ -3,6 +3,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import WishesItem from './WishesItem';
 import { wishlist } from './wishlist-data';
 import { styButtonWrapper } from './styles';
+import ImgRing from '@assets/images/ring.png';
 
 const INTERVAL_SLIDE = 35000;
 
@@ -10,6 +11,14 @@ function WishesContainer() {
   const [active, setActive] = useState(0);
   const [pauseSlide, setPauseSlide] = useState(false);
   const totalWishes = wishlist.length || 0;
+
+  const customStyle = {
+    padding: "10px"
+  }
+
+  const customStyleWhite = {
+    backgroundColour: "#fff"
+  }
 
   const handleSetActive = (isNext = true) => {
     if (isNext) {
@@ -59,13 +68,40 @@ function WishesContainer() {
   }, [handleSetNext, pauseSlide]);
 
   return (
-    <div className="wrap-testimony">
-      {renderWishlist()}
-      <div css={styButtonWrapper}>
-        <button className="btn btn-sm button-nav" onClick={() => handleSetActive(false)}>{`< Sebelumnya`}</button>
-        <button className="btn btn-sm button-nav" onClick={() => handleSetActive(true)}>{`Selanjutnya >`}</button>
+      <div className="container">
+        <div className="row" style={customStyle}>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Isikan Nama"
+            ></input>
+          </div>
+          <div class="form-group">
+          <textarea className="form-control" rows="3" placeholder="Tuliskan Pesan dan Doa"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Kirim Ucapan
+          </button>
+        </div>
+        <div className="row" style={customStyle}>
+          <div className="col-md-12 col-md-offset-0">
+            <ul className="timeline animate-box">
+              <li>
+                {ImgRing && <div className="timeline-badge" style={{ backgroundImage: `url(${ImgRing})` }} />}
+                <div className="timeline-panel">
+                  <div className="timeline-heading">
+                    <h3 className="timeline-title">Fandi</h3>
+                  </div>
+                  <div className="timeline-body">
+                    <p>Semoga jodoh dunia akhirat, langgeng selamanya.. pernikahan yang membawa rezeki, happy terus </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </div>
       </div>
-    </div>
+      </div>
   );
 }
 

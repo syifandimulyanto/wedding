@@ -18,7 +18,7 @@ function LocationSection() {
                   rel="noreferrer"
                   style={{ color: '#828282' }}
                 >
-                  <strong>Rumah Nanda</strong>
+                  {/* <strong>Rumah Nanda</strong> */}
                 </a>{' '}
                 <br />
                 Dsn. Mejerat  RT. 01 RW. 06 Ds. Pungging <br /> Kec. Pungging Kab. Mojokerto

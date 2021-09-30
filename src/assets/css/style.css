@@ -13,6 +13,15 @@
 * 	Template Style 
 *
 * ======================================================= */
+
+.modal-body {
+  background-color: antiquewhite;
+}
+
+.modal-footer {
+  background-color: antiquewhite;
+}
+
 body {
   font-family: 'Work Sans', Arial, sans-serif;
   font-weight: 400;
@@ -1022,6 +1031,7 @@ form label {
 .fh5co-section {
   padding: 3em 0;
   clear: both;
+  /*  */
 }
 
 #fh5co-couple {
@@ -1044,6 +1054,10 @@ form label {
 
 .fh5co-section-gray {
   background: rgba(0, 0, 0, 0.04);
+}
+
+.fh5co-section-cream {
+  background-color: #f3e6e6;
 }
 
 .couple-wrap {
@@ -1118,12 +1132,12 @@ form label {
   .couple-half .groom,
   .couple-half .bride {
     width: 100%;
-    height: 140px;
+    height: 200px;
   }
   .couple-half .groom img,
   .couple-half .bride img {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
   }
 }

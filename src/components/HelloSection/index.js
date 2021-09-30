@@ -11,7 +11,7 @@ function HelloSection({ isInvitation }) {
 
   return (
     <Fragment>
-      <div id="fh5co-couple" css={styWrapper}>
+      <div id="fh5co-couple" css={styWrapper} className="fh5co-section-cream">
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
