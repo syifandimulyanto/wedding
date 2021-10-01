@@ -22,7 +22,7 @@ function WeddingSection({ isInvitation }) {
             <div className="col-md-10 col-md-offset-1">
               <WeddingInfoBox
                 title="Akad Nikah"
-                time="Akan dilaksanakan pagi hari "
+                time="08.00 WIB"
                 date="Sabtu, 09 Oktober 2021"
                 description="Masjid Jami’ Sabilul Muttaqin </br> Desa Pungging Mojokerto"
               />
